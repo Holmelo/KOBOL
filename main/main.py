@@ -11,6 +11,7 @@ import busio
 import adafruit_l3gd20
 import adafruit_mma8451
 import adafruit_bme280
+import csv
  
 # Hardware I2C setup:
 I2C = busio.I2C(board.SCL, board.SDA)
@@ -30,4 +31,13 @@ while True:
 	time.sleep(1)
 
 
- 
+with open('WriteSensorData.csv', 'w', newline='') as f:
+        thewriter = csv.writer(f)
+        thewriter.writerow(['Temperature', 'Humidity', 'Pressure', 'Altitude', 'Gyro'])
+        for i in range(1,100):
+                thewriter.writerow([SENSOR_TEMPERATURE.temperature,
+                                    SENSOR_TEMPERATURE.humidity,
+                                    SENSOR_TEMPERATURE.pressure,
+                                    SENSOR_TEMPERATURE.altitude,
+                                    SENSOR_GYRO.gyro])
+
