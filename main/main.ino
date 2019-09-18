@@ -4,12 +4,21 @@
 #include <Adafruit_BME280.h>
 #include <Adafruit_MMA8451.h>
 #include <Adafruit_L3GD20_U.h>
+#include <CurieBLE.h>
+#include <CurieIMU.h>
+
+BLEPeripheral blePeripheral;                                    // BLE Peripheral Device (the board you're programming)
+BLEService ledService("19B10000-E8F2-537E-4F6C-D104768A1214");  // BLE LED Service
+
+// BLE LED Switch Characteristic - custom 128-bit UUID, read and writable by central
+BLEUnsignedCharCharacteristic switchCharacteristic("19B10001-E8F2-537E-4F6C-D104768A1214", BLERead | BLEWrite);
+
+const int ledPin = 13; // pin to use for the LED
 
 #define SEALEVELPRESSURE_HPA (1013.25)
 
 unsigned long loop_delay = 500;
 
-/* Assign a unique ID to this sensor at the same time */
 Adafruit_BME280 temperature;
 Adafruit_MMA8451 accelerometer = Adafruit_MMA8451();
 Adafruit_L3GD20_Unified gyro = Adafruit_L3GD20_Unified(20);
@@ -17,34 +26,63 @@ Adafruit_L3GD20_Unified gyro = Adafruit_L3GD20_Unified(20);
 void setup() {
     Serial.begin(9600);
 
-    setup_temperature();
-    setup_accelerometer();
+    CurieIMU.begin();
+      
+    setup_bluetooth();
     setup_gyro();
-    
+    setup_accelerometer();
+    setup_temperature();
 }
 
 void loop() { 
   
-    print_temperature_values();
-    print_accelerometer_values();
-    print_gyro_values();
-    
-    delay(loop_delay);
+  BLECentral central = blePeripheral.central();
+  
+  if (central) {
+    Serial.print("Connected to central: ");
+    Serial.println(central.address());
+  
+    while (central.connected()) {
+
+      if (switchCharacteristic.written()) {
+        if (switchCharacteristic.value()) {   // any value other than 0
+          Serial.println("LED on");
+          digitalWrite(ledPin, HIGH);         // will turn the LED on
+        } else {                              // a 0 value
+          Serial.println(F("LED off"));
+          digitalWrite(ledPin, LOW);          // will turn the LED off
+        }
+      }
+    }
+  
+    Serial.print(F("Disconnected from central: "));
+    Serial.println(central.address());
+  }
+  
+   print_temperature();
+   delay(loop_delay);
+}
+
+void setup_bluetooth(){
+  Serial.begin(9600);
+  
+  pinMode(ledPin, OUTPUT);
+  
+  blePeripheral.setLocalName("Sleep Monitor Device");
+  blePeripheral.setAdvertisedServiceUuid(ledService.uuid());
+  
+  blePeripheral.addAttribute(ledService);
+  blePeripheral.addAttribute(switchCharacteristic);
+  
+  switchCharacteristic.setValue(0);
+  
+  blePeripheral.begin();
+  
+  Serial.println("BLE LED Peripheral");
 }
 
 void setup_gyro(){
-  
-  /* Enable auto-ranging */
-  gyro.enableAutoRange(true);
-  
-  /* Initialise the sensor */
-  bool status = gyro.begin();  
-  if(!status)
-  {
-    Serial.println("Could not find a valid L3GD20 (gyro) sensor, check wiring!");
-    while(1);
-  }
-  Serial.println("L3GD20 (gyro) sensor found!");
+  CurieIMU.setGyroRange(250);
 }
 
 void setup_temperature(){
@@ -59,41 +97,43 @@ void setup_temperature(){
 
 void setup_accelerometer(){
   
-  bool status = accelerometer.begin(); 
-  if (!accelerometer.begin()) {
-    Serial.println("Could not find a valid MMA8451 (accelerometer) sensor, check wiring!");
-    while (1);
-  }
-  Serial.println("MMA8451 (accelerometer) sensor found!");
-  
-  accelerometer.setRange(MMA8451_RANGE_2_G);
+  CurieIMU.setAccelerometerRange(2);
   
 }
 
-void print_gyro_values(){
-    /* Get a new sensor event */ 
-  sensors_event_t event; 
-  gyro.getEvent(&event);
- 
-  /* Display the results (speed is measured in rad/s) */
-  Serial.print("X: "); Serial.print(event.gyro.x); Serial.print("  ");
-  Serial.print("Y: "); Serial.print(event.gyro.y); Serial.print("  ");
-  Serial.print("Z: "); Serial.print(event.gyro.z); Serial.print("  ");
-  Serial.println("rad/s ");
+void print_gyro(){
+  float gx, gy, gz; //scaled Gyro values
+
+  // read gyro measurements from device, scaled to the configured range
+  CurieIMU.readGyroScaled(gx, gy, gz);
+
+  // display tab-separated gyro x/y/z values
+  Serial.print("g:\t");
+  Serial.print(gx);
+  Serial.print("\t");
+  Serial.print(gy);
+  Serial.print("\t");
+  Serial.print(gz);
+  Serial.println();
 }
 
-void print_accelerometer_values(){
-  accelerometer.read();
-  sensors_event_t event; 
-  accelerometer.getEvent(&event);
+void print_accelerometer(){
+  float ax, ay, az;   //scaled accelerometer values
 
-  Serial.println("Accelerometer");
-  Serial.println(event.acceleration.x);
-  Serial.println(event.acceleration.y);
-  Serial.println(event.acceleration.z);
+  // read accelerometer measurements from device, scaled to the configured range
+  CurieIMU.readAccelerometerScaled(ax, ay, az);
+
+  // display tab-separated accelerometer x/y/z values
+  Serial.print("a:\t");
+  Serial.print(ax);
+  Serial.print("\t");
+  Serial.print(ay);
+  Serial.print("\t");
+  Serial.print(az);
+  Serial.println();
 }
 
-void print_temperature_values() {
+void print_temperature() {
     Serial.print("Temperature = ");
     Serial.print(temperature.readTemperature());
     Serial.println(" *C");

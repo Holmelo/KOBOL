@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/start_stop_reading_btn"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/pair_unpair_device_btn"
+        tools:layout_editor_absoluteX="8dp"
+        tools:text="START READING" />
+
+    <Button
+        android:id="@+id/share_csv_btn"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/start_stop_reading_btn"
+        tools:layout_editor_absoluteX="8dp"
+        tools:text="SHARE CSV" />
+
+    <Button
+        android:id="@+id/pair_unpair_device_btn"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/bluetooth_on_off_btn"
+        tools:layout_editor_absoluteX="8dp"
+        tools:text="PAIR DEVICE" />
+
+    <Button
+        android:id="@+id/bluetooth_on_off_btn"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/number_of_readings_text"
+        tools:layout_editor_absoluteX="8dp"
+        tools:text="BLUETOOTH ON" />
+
+    <TextView
+        android:id="@+id/number_of_readings_text"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintTop_toBottomOf="@+id/last_reading_time_text"
+        tools:layout_editor_absoluteX="9dp"
+        tools:text="Number of Readings: " />
+
+    <TextView
+        android:id="@+id/temperature_text"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:text="Temperature: " />
+
+    <TextView
+        android:id="@+id/humidity_text"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Humidity: "
+        app:layout_constraintTop_toBottomOf="@+id/temperature_text"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <TextView
+        android:id="@+id/acceleration_text"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Acceleration: "
+        app:layout_constraintTop_toBottomOf="@+id/humidity_text"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <TextView
+        android:id="@+id/gyroscope_text"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Gyroscope: "
+        app:layout_constraintTop_toBottomOf="@+id/acceleration_text"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <TextView
+        android:id="@+id/begin_time_text"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Begin time:"
+        app:layout_constraintTop_toBottomOf="@+id/gyroscope_text"
+        tools:layout_editor_absoluteX="9dp" />
+
+    <TextView
+        android:id="@+id/last_reading_time_text"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Last Reading:"
+        app:layout_constraintTop_toBottomOf="@+id/begin_time_text"
+        tools:layout_editor_absoluteX="9dp" />
+
+    <TextView
+        android:id="@+id/readings_text"
+        android:layout_width="396dp"
+        android:layout_height="299dp"
+        android:layout_marginTop="8dp"
+        android:text="All readings"
+        app:layout_constraintTop_toBottomOf="@+id/share_csv_btn"
+        tools:layout_editor_absoluteX="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
