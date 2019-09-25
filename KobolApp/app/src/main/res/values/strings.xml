@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">KobolApp</string>
+    <string name="view_time_slept">View Time Slept</string>
+    <string name="view_temperature">View Temperature</string>
+    <string name="view_head_movement">View Head Movement</string>
+    <string name="view_emergency_information">View Emergency Information</string>
+    <string name="view_concussion_information">View Concussion Information</string>
+    <string name="view_csv_sleep_file">View CSV Sleep File</string>
+    <string name="title_activity_navbottom">navbottom</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="time_slept_activity">Time Slept Activity</string>
+</resources>
