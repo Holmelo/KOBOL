@@ -13,4 +13,12 @@
         android:text="Sample Page - Time Slept"
         tools:layout_editor_absoluteX="158dp"
         tools:layout_editor_absoluteY="293dp" />
+
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
