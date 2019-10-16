@@ -134,6 +134,4 @@
         android:layout_centerVertical="true"
         android:layout_below="@id/concussionButton"
         android:layout_marginTop="10dp"/>
-
-
 </RelativeLayout>

@@ -26,19 +26,6 @@ public class MainActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                 new HomeFragment()).commit();
 
-
-        //Button viewTempButton = findViewById(R.id.tempButton);
-        //Button viewMovementButton = findViewById(R.id.headMovementButton);
-        //Button viewEmergencyButton = findViewById(R.id.emergencyButton);
-        //Button viewConcussion = findViewById(R.id.concussionButton);
-        //Button viewCSVButton = findViewById(R.id.csvButton);
-
-
-        //viewTempButton.setOnClickListener(this);
-        //viewMovementButton.setOnClickListener(this);
-        //viewEmergencyButton.setOnClickListener(this);
-        //viewConcussion.setOnClickListener(this);
-        //viewCSVButton.setOnClickListener(this);
     }
 
 
