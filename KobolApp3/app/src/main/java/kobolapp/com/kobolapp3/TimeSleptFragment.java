@@ -75,9 +75,6 @@ public class TimeSleptFragment extends AppCompatActivity {
     /**grab data**/
     private ArrayList<ILineDataSet> GetDataValues()
     {
-
-
-
         /**try {
          CSVReader reader = new CSVReader(new FileReader("csvfile.csv"));
          csv = reader.readAll();
@@ -103,8 +100,6 @@ public class TimeSleptFragment extends AppCompatActivity {
             seperatedData.add(x);;
         }
 
-
-
         List<Entry> gvalues = new ArrayList<Entry>();
         List<Entry> avalues = new ArrayList<Entry>();
         List<Entry> tvalues = new ArrayList<Entry>();
@@ -118,8 +113,6 @@ public class TimeSleptFragment extends AppCompatActivity {
             hvalues.add(new Entry(Float.parseFloat(seperatedData.get(i).get(0)),Float.parseFloat(seperatedData.get(i).get(4))));
 
         }
-
-
 
         LineDataSet LineDataSet1 = new LineDataSet(gvalues, "Gyro");
         LineDataSet1.setColor(Color.RED);
@@ -135,8 +128,6 @@ public class TimeSleptFragment extends AppCompatActivity {
         dataSets.add(LineDataSet2);
         dataSets.add(LineDataSet3);
         dataSets.add(LineDataSet4);
-
-
 
         return dataSets;
     }
