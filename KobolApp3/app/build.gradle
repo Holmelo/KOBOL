@@ -29,4 +29,9 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation files('libs/MPAndroidChart-v3.0.1.jar')
     implementation 'com.opencsv:opencsv:4.6'
+    implementation 'com.google.firebase:firebase-core:11.8.0'
+    implementation 'com.google.firebase:firebase-auth:11.8.0'
 }
+
+
+apply plugin: 'com.google.gms.google-services'

@@ -9,11 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TimeSleptFragment"></activity>
+        <activity android:name=".HomeMenu"></activity>
+        <activity android:name=".RegisterFragment" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".TimeSleptFragment" />
         <activity android:name=".fragment_timeslept" />
         <activity android:name=".test2" />
         <activity android:name=".test1" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".LoginFragment">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

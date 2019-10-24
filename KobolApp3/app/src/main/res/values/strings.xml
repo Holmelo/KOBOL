@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">KobolApp3</string>
     <string name="sample_page_temperature">Sample Page - Temperature</string>
+    <string name="username">Username</string>
 </resources>
