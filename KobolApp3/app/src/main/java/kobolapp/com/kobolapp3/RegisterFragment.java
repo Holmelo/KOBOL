@@ -58,10 +58,13 @@ public class RegisterFragment extends AppCompatActivity {
                     if (s2.equals(s3)) {
                         Boolean checkmail = db.checkemail(s1);
                         if (checkmail==true) {
-                            Boolean insert = db.insert(s1,s2, s3, s4, s5, s6, s7, s8);
-                            if (insert==true) {
-                                Toast.makeText(getApplicationContext(), "Register Complete", Toast.LENGTH_SHORT).show();
-                            }
+                            db.insert(s1,s2, s3, s4, s5, s6, s7, s8);
+                            Toast.makeText(getApplicationContext(), "Register Complete", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(RegisterFragment.this, LoginFragment.class);
+                            startActivity(intent);
+                            //if (insert==true) {
+
+                            //}
                         } else {
                             Toast.makeText(getApplicationContext(), "Email Already Exists", Toast.LENGTH_SHORT).show();
                         }
@@ -77,6 +80,8 @@ public class RegisterFragment extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
 
     }
 }
