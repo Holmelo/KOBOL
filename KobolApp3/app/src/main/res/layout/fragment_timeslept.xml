@@ -7,17 +7,12 @@
     tools:context=".TimeSleptFragment">
 
     <TextView
-        android:id="@+id/testingView"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sample Page - Time Slept"
         tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="293dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="150dp"
-        />
+        tools:layout_editor_absoluteY="293dp" />
 
 
     <com.github.mikephil.charting.charts.LineChart

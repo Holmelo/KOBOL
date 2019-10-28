@@ -9,14 +9,12 @@ import android.widget.Button;
 
 public class HomeMenu extends AppCompatActivity {
 
-    Button sleep, temp, head, emergency, concussion, csv, profile;
+    Button sleep, temp, head, emergency, concussion, csv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_menu);
-
-        setTitle("Home");
 
         sleep = findViewById(R.id.timeSleptButton);
         temp = findViewById(R.id.headMovementButton);
@@ -24,7 +22,6 @@ public class HomeMenu extends AppCompatActivity {
         emergency = findViewById(R.id.emergencyButton);
         concussion = findViewById(R.id.concussionButton);
         csv = findViewById(R.id.csvButton);
-        profile = findViewById(R.id.profileButton);
 
 
         sleep.setOnClickListener(new View.OnClickListener() {
@@ -34,15 +31,6 @@ public class HomeMenu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        profile.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(HomeMenu.this, ProfileFragment.class);
-                startActivity(intent);
-            }
-        });
-
 
     }
 

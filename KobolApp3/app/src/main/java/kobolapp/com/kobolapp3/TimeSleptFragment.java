@@ -18,13 +18,44 @@ import java.nio.ByteOrder;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Timer;
+import android.graphics.Color;
+import android.os.Bundle;
 
-import android.widget.TextView;
+import com.github.mikephil.charting.charts.LineChart;
+import com.github.mikephil.charting.data.Entry;
+import com.github.mikephil.charting.data.LineData;
+import com.github.mikephil.charting.data.LineDataSet;
+import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
+import android.view.View;
+import android.view.Menu;
+import android.view.MenuItem;
+
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Intent;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.lang.Math;
+
+import java.util.List;
+
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
+import java.io.FileWriter;
+import java.io.IOException;
+
+import java.util.Timer;
 
 public class TimeSleptFragment extends AppCompatActivity {
     Timer timer = new Timer();
-    TextView textViewChange;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,11 +69,6 @@ public class TimeSleptFragment extends AppCompatActivity {
         LineData data = new LineData(GetDataValues());
         chart.setData(data);
         chart.invalidate();
-
-
-        textViewChange = findViewById(R.id.testingView);
-
-        textViewChange.setText("Testing Text");
 
     }
 
