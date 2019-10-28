@@ -16,7 +16,6 @@ public class LoginFragment extends AppCompatActivity  {
 
     EditText e1, e2;
     Button b1;
-    DatabaseHelper db;
     TextView t1;
 
     @Override
@@ -27,26 +26,10 @@ public class LoginFragment extends AppCompatActivity  {
         setContentView(R.layout.fragment_login);
 
 
-        db = new DatabaseHelper(this);
         e1 = findViewById(R.id.email);
         e2 = findViewById(R.id.password);
         t1 = findViewById(R.id.regolink);
         b1 = findViewById(R.id.login);
-        b1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String email = e1.getText().toString();
-                String password = e2.getText().toString();
-
-                Boolean checkemailpass = db.emailpassword(email, password);
-                if (checkemailpass==true) {
-                    Toast.makeText(getApplicationContext(), "Successful Login", Toast.LENGTH_SHORT).show();
-                    openActivity1();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Wrong email or password", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
 
         t1.setOnClickListener(new View.OnClickListener() {
             @Override

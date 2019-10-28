@@ -134,4 +134,25 @@
         android:layout_centerVertical="true"
         android:layout_below="@id/concussionButton"
         android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/profileButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="349dp"
+        android:layout_height="55dp"
+        android:drawableStart="@drawable/iconcsv"
+        android:drawableEnd="@drawable/arrowright"
+        android:drawableRight="@drawable/arrowright"
+        android:drawableBottom="@drawable/bottomline"
+        android:drawablePadding="15dp"
+        android:gravity="start|center_vertical"
+        android:text="Profile"
+        android:textAllCaps="true"
+        android:textColor="#494949"
+        android:textSize="14sp"
+        android:typeface="normal"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/csvButton"
+        android:layout_marginTop="10dp"/>
 </RelativeLayout>
