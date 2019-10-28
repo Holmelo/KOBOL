@@ -56,15 +56,20 @@ import java.io.IOException;
 
 import java.util.Timer;
 
-public class TimeSleptFragment extends AppCompatActivity {
+public class TempFragment extends AppCompatActivity {
     Timer timer = new Timer();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setTitle("Time Slept");
-        setContentView(R.layout.fragment_timeslept);
+        setContentView(R.layout.fragment_temp);
+
+        // Sets up chart
+        LineChart chart = (LineChart) findViewById(R.id.chart);
+        LineData data = new LineData(GetDataValues());
+        chart.setData(data);
+        chart.invalidate();
 
         // Applies the custom action bar style
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
@@ -72,15 +77,7 @@ public class TimeSleptFragment extends AppCompatActivity {
 
         // Changes the action bar title
         TextView title = getSupportActionBar().getCustomView().findViewById(R.id.action_bar_title);
-        title.setText(R.string.slept);
-
-
-        /**set up chart**/
-        LineChart chart = (LineChart) findViewById(R.id.chart);
-
-        LineData data = new LineData(GetDataValues());
-        chart.setData(data);
-        chart.invalidate();
+        title.setText(R.string.temp);
 
     }
 
@@ -174,5 +171,7 @@ public class TimeSleptFragment extends AppCompatActivity {
         csvWriter.flush();
         csvWriter.close();
     }
+
+
 
 }

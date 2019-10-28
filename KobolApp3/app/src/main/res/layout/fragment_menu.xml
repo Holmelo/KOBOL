@@ -47,7 +47,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_below="@id/timeSleptButton"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         />
 
     <Button
@@ -69,7 +69,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_below="@id/tempButton"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="15dp"/>
 
     <Button
         android:id="@+id/emergencyButton"
@@ -90,7 +90,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_below="@id/headMovementButton"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="15dp"/>
 
 
     <Button
@@ -112,7 +112,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_below="@id/emergencyButton"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="15dp"/>
 
     <Button
         android:id="@+id/csvButton"
@@ -133,5 +133,5 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_below="@id/concussionButton"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="15dp"/>
 </RelativeLayout>

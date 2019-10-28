@@ -55,6 +55,4 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         else return false;
     }
 
-
-
 }
