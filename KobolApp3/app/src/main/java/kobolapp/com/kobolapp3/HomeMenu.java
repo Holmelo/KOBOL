@@ -52,6 +52,14 @@ public class HomeMenu extends AppCompatActivity {
             }
         });
 
+        head.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeMenu.this, HeadFragment.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
 }

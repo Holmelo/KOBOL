@@ -17,7 +17,7 @@
         android:drawableBottom="@drawable/bottomline"
         android:drawablePadding="15dp"
         android:gravity="start|center_vertical"
-        android:text="View Time Slept"
+        android:text="View Humidity"
         android:textAllCaps="true"
         android:textColor="#494949"
         android:textSize="14sp"
