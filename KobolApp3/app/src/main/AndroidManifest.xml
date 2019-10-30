@@ -2,12 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="kobolapp.com.kobolapp3">
 
-    <uses-feature android:name="android.hardware.bluetooth" />
-    <uses-permission android:name="android.permission.BLUETOOTH" />
-    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,11 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TimeSleptFragment"></activity>
+        <activity android:name=".HeadFragment"></activity>
+        <activity android:name=".TempFragment" />
+        <activity android:name=".HomeMenu" />
+        <activity android:name=".RegisterFragment" />
+        <activity android:name=".TimeSleptFragment" />
         <activity android:name=".fragment_timeslept" />
         <activity android:name=".test2" />
         <activity android:name=".test1" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".LoginFragment">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
