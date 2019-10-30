@@ -171,8 +171,8 @@ public class BluetoothLeService extends Service {
                 broadcastUpdate(ACTION_DATA_AVAILABLE, characteristic);
 
                 final byte[] data = characteristic.getValue();
-                readCharacteristic(characteristic);
-                // Log.d(TAG, characteristic.getUuid().toString());
+
+                Log.d(TAG, characteristic.getUuid().toString());
 
 
                 if(data != null){
