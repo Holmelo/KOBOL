@@ -325,39 +325,39 @@ public class BluetoothLeService extends Service {
         return true;
     }
 
-    public void startScan(){
-        mBluetoothScanner.startScan(mLeScanCallback);
-        mIsScanning = true;
-        final Handler handle = new Handler();
-        handle.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                mBluetoothScanner.stopScan(mLeScanCallback);
-            }
-        },SCAN_PERIOD);
-    }
+//    public void startScan(){
+//        mBluetoothScanner.startScan(mLeScanCallback);
+//        mIsScanning = true;
+//        final Handler handle = new Handler();
+//        handle.postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                mBluetoothScanner.stopScan(mLeScanCallback);
+//            }
+//        },SCAN_PERIOD);
+//    }
 
-    public void stopScan(){
-        if(mIsScanning)
-            mBluetoothScanner.stopScan(mLeScanCallback);
-        mIsScanning = false;
-    }
+//    public void stopScan(){
+//        if(mIsScanning)
+//            mBluetoothScanner.stopScan(mLeScanCallback);
+//        mIsScanning = false;
+//    }
 
-    public void disconnect() {
-        if (mBluetoothAdapter == null || mBluetoothGatt == null) {
-            Log.w(TAG, "BluetoothAdapter not initialized");
-            return;
-        }
-        mBluetoothGatt.disconnect();
-    }
+//    public void disconnect() {
+//        if (mBluetoothAdapter == null || mBluetoothGatt == null) {
+//            Log.w(TAG, "BluetoothAdapter not initialized");
+//            return;
+//        }
+//        mBluetoothGatt.disconnect();
+//    }
 
-    public void close() {
-        if (mBluetoothGatt == null) {
-            return;
-        }
-        mBluetoothGatt.close();
-        mBluetoothGatt = null;
-    }
+//    public void close() {
+//        if (mBluetoothGatt == null) {
+//            return;
+//    }
+//        mBluetoothGatt.close();
+//        mBluetoothGatt = null;
+//    }
 
     public void readCharacteristic(BluetoothGattCharacteristic characteristic) {
         if (mBluetoothAdapter == null || mBluetoothGatt == null) {

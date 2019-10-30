@@ -196,9 +196,7 @@ public class TimeSleptFragment extends AppCompatActivity {
         /**set up chart**/
         LineChart chart = (LineChart) findViewById(R.id.chart);
 
-        LineData data = new LineData(GetDataValues(mContext));
-        chart.setData(data);
-        chart.invalidate();
+
 
         checkBTPermissions();
 
@@ -214,6 +212,18 @@ public class TimeSleptFragment extends AppCompatActivity {
         }
         mBluetoothLeService = new BluetoothLeService();
         mBluetoothLeService.initialize(this, mBluetoothManager);
+
+        float[] f1 = {4f,6f,3f};
+        float[] f2 = {8f,3f,2f};
+        float[] f3 = {7f,3f,8f};
+        float[] f4 = {9f,2f,5f};
+
+        try {
+            addToCSV(f1,f2,5,7,mContext,1);
+            addToCSV(f3,f4,7,2,mContext,2);
+
+        } catch (IOException e) {
+        }
 
 
         for (int i = 0; i < 900; i += 9) {
@@ -243,6 +253,7 @@ public class TimeSleptFragment extends AppCompatActivity {
             data2[i] = testdata.get(i);
         }
 
+        LineData data = new LineData(GetDataValues(mContext));
         chart.setData(data);
 
         chart.getXAxis().setLabelCount(100, true);
@@ -250,9 +261,9 @@ public class TimeSleptFragment extends AppCompatActivity {
         chart.invalidate();
 
         //
-        mBluetoothLeService.startScan();
+        //mBluetoothLeService.startScan();
         //
-        mBluetoothLeService.startScan();
+        //mBluetoothLeService.startScan();
 
         final Intent intent = getIntent();
         mDeviceName = intent.getStringExtra(EXTRAS_DEVICE_NAME);
@@ -281,7 +292,7 @@ public class TimeSleptFragment extends AppCompatActivity {
 
         List<String[]> csv = new ArrayList<>();
         try {
-            CSVReader reader = new CSVReader(new InputStreamReader(context.openFileInput("test.csv")));
+            CSVReader reader = new CSVReader(new InputStreamReader(getResources().openRawResource(R.raw.test)));
             csv = reader.readAll();
         } catch (Exception e) {
         }
@@ -401,8 +412,8 @@ public class TimeSleptFragment extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        unbindService(mServiceConnection);
-        mBluetoothLeService = null;
+        //unbindService(mServiceConnection);
+        //mBluetoothLeService = null;
     }
 
     private void checkBTPermissions() {
