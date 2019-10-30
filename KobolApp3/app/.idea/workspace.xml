@@ -9,6 +9,7 @@
     <list default="true" id="9175de5a-12b1-4b0e-afd5-c361a96b6e42" name="Default Changelist" comment="">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/../../KobolApp3 L.zip" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/kobolapp/com/kobolapp3/BluetoothLeService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/kobolapp/com/kobolapp3/GattAttributes.java" afterDir="false" />
@@ -137,6 +138,17 @@
       <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_timeslept.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_timeslept.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/strings.xml" afterDir="false" />
 >>>>>>> parent of 289c895... carl and lauchys build :))))D
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kobolapp/com/kobolapp3/HomeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kobolapp/com/kobolapp3/HomeMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_temp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_temp.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_timeslept.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_timeslept.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/strings.xml" afterDir="false" />
+>>>>>>> parent of 289c895... carl and lauchys build :))))D
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -160,11 +172,14 @@
       <file pinned="false" current-in-tab="false">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/main/java/kobolapp/com/kobolapp3/TimeSleptFragment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2397">
               <caret line="141" column="38" selection-start-line="141" selection-start-column="38" selection-end-line="141" selection-end-column="38" />
 =======
+=======
+>>>>>>> parent of 289c895... carl and lauchys build :))))D
 =======
 >>>>>>> parent of 289c895... carl and lauchys build :))))D
         <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_menu.xml">
@@ -191,6 +206,9 @@
             <state relative-caret-position="-1037">
               <caret line="74" column="38" lean-forward="true" selection-start-line="74" selection-start-column="38" selection-end-line="74" selection-end-column="38" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 289c895... carl and lauchys build :))))D
+=======
 >>>>>>> parent of 289c895... carl and lauchys build :))))D
 =======
 >>>>>>> parent of 289c895... carl and lauchys build :))))D
@@ -204,9 +222,12 @@
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="289">
               <caret line="17" column="52" lean-forward="true" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
 =======
+=======
+>>>>>>> parent of 289c895... carl and lauchys build :))))D
 =======
 >>>>>>> parent of 289c895... carl and lauchys build :))))D
             <state relative-caret-position="367">
@@ -222,6 +243,9 @@
             <state relative-caret-position="51">
               <caret line="9" selection-start-line="9" selection-end-line="19" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 289c895... carl and lauchys build :))))D
+=======
 >>>>>>> parent of 289c895... carl and lauchys build :))))D
 =======
 >>>>>>> parent of 289c895... carl and lauchys build :))))D
@@ -242,11 +266,14 @@
       <file pinned="false" current-in-tab="false">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="4" selection-start-line="4" selection-end-line="4" />
 =======
+=======
+>>>>>>> parent of 289c895... carl and lauchys build :))))D
 =======
 >>>>>>> parent of 289c895... carl and lauchys build :))))D
         <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_head.xml">
@@ -264,6 +291,9 @@
             <state relative-caret-position="153">
               <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 289c895... carl and lauchys build :))))D
+=======
 >>>>>>> parent of 289c895... carl and lauchys build :))))D
 =======
 >>>>>>> parent of 289c895... carl and lauchys build :))))D
@@ -310,6 +340,7 @@
     <panes>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -375,6 +406,8 @@
 =======
 =======
 >>>>>>> parent of 289c895... carl and lauchys build :))))D
+=======
+>>>>>>> parent of 289c895... carl and lauchys build :))))D
       <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane" />
@@ -438,6 +471,9 @@
         </subPane>
       </pane>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 289c895... carl and lauchys build :))))D
+=======
 >>>>>>> parent of 289c895... carl and lauchys build :))))D
 =======
 >>>>>>> parent of 289c895... carl and lauchys build :))))D
@@ -547,7 +583,12 @@
   <component name="ToolWindowManager">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+=======
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <editor active="true" />
+>>>>>>> parent of 289c895... carl and lauchys build :))))D
 =======
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
     <editor active="true" />
@@ -568,7 +609,12 @@
       <window_info id="Capture Tool" order="8" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="0" weight="0.32869378" />
+=======
+      <window_info anchor="bottom" id="Find" weight="0.32976446" />
+      <window_info anchor="bottom" id="Run" order="0" visible="true" weight="0.32869378" />
+>>>>>>> parent of 289c895... carl and lauchys build :))))D
 =======
       <window_info anchor="bottom" id="Find" weight="0.32976446" />
       <window_info anchor="bottom" id="Run" order="0" visible="true" weight="0.32869378" />
@@ -585,9 +631,14 @@
       <window_info anchor="bottom" id="Version Control" order="6" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.32976446" />
       <window_info anchor="bottom" id="Android Profiler" order="8" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.32976446" />
+=======
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32976446" />
+      <window_info anchor="bottom" id="Android Profiler" order="8" />
+>>>>>>> parent of 289c895... carl and lauchys build :))))D
 =======
       <window_info anchor="bottom" id="Build" order="7" weight="0.32976446" />
       <window_info anchor="bottom" id="Android Profiler" order="8" />
@@ -618,6 +669,12 @@
           <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+>>>>>>> parent of 289c895... carl and lauchys build :))))D
 =======
           <folding>
             <element signature="imports" expanded="true" />
@@ -697,6 +754,7 @@
     </entry>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_menu.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
@@ -750,6 +808,8 @@
 =======
 =======
 >>>>>>> parent of 289c895... carl and lauchys build :))))D
+=======
+>>>>>>> parent of 289c895... carl and lauchys build :))))D
     <entry file="file://$PROJECT_DIR$/src/main/java/kobolapp/com/kobolapp3/HomeMenu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -801,6 +861,9 @@
         <state relative-caret-position="51">
           <caret line="9" selection-start-line="9" selection-end-line="19" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 289c895... carl and lauchys build :))))D
+=======
 >>>>>>> parent of 289c895... carl and lauchys build :))))D
 =======
 >>>>>>> parent of 289c895... carl and lauchys build :))))D
@@ -812,8 +875,13 @@
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state relative-caret-position="289">
           <caret line="17" column="52" lean-forward="true" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+=======
+        <state relative-caret-position="367">
+          <caret line="28" column="40" lean-forward="true" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+>>>>>>> parent of 289c895... carl and lauchys build :))))D
 =======
         <state relative-caret-position="367">
           <caret line="28" column="40" lean-forward="true" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
