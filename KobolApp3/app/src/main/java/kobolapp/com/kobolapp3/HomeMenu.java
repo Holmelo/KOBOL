@@ -4,14 +4,16 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class HomeMenu extends AppCompatActivity {
 
-    Button sleep, temp, head, emergency, concussion, csv;
+    Button sleep, temp, head, emergency, concussion, csv, logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +36,7 @@ public class HomeMenu extends AppCompatActivity {
         emergency = findViewById(R.id.emergencyButton);
         concussion = findViewById(R.id.concussionButton);
         csv = findViewById(R.id.csvButton);
+        logout = findViewById(R.id.buttonLogout);
 
 
         sleep.setOnClickListener(new View.OnClickListener() {
@@ -57,6 +60,23 @@ public class HomeMenu extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(HomeMenu.this, HeadFragment.class);
                 startActivity(intent);
+            }
+        });
+
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SharedPreferences loginPreferences = getSharedPreferences("loginPrefs", MODE_PRIVATE);
+                SharedPreferences.Editor editor = loginPreferences.edit();
+                editor.clear();
+                editor.commit();
+                finish();
+
+                // Launching login activity screen
+                Intent intentLogout = new Intent(HomeMenu.this, LoginFragment.class);
+                startActivity(intentLogout);
+                Toast.makeText(getApplicationContext(), "Successfully Logged Out", Toast.LENGTH_SHORT).show();
+
             }
         });
 
