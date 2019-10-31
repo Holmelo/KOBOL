@@ -10,9 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9175de5a-12b1-4b0e-afd5-c361a96b6e42" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_head.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_head.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_temp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_temp.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_timeslept.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_timeslept.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kobolapp/com/kobolapp3/TimeSleptFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kobolapp/com/kobolapp3/TimeSleptFragment.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,11 +32,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/kobolapp/com/kobolapp3/TimeSleptFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5757">
-              <caret line="160" selection-start-line="160" selection-end-line="160" />
+            <state relative-caret-position="-306">
+              <caret line="303" selection-start-line="303" selection-end-line="303" />
+              <folding>
+                <element signature="e#9549#9563#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,11 +59,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kobolapp/com/kobolapp3/BluetoothLeService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="331" column="45" selection-start-line="331" selection-start-column="45" selection-end-line="331" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_timeslept.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="48" lean-forward="true" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+            <state relative-caret-position="527">
+              <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
             </state>
           </provider>
           <provider editor-type-id="android-designer2" />
@@ -91,7 +102,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/kobolapp/com/kobolapp3/LoginFragment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="578">
-              <caret line="45" column="114" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="114" />
+              <caret line="45" column="114" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="114" />
             </state>
           </provider>
         </entry>
@@ -128,13 +139,13 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/main/java/kobolapp/com/kobolapp3/BluetoothLeService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/kobolapp/com/kobolapp3/TimeSleptFragment.java" />
         <option value="$PROJECT_DIR$/src/main/res/layout/fragment_home.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/fragment_menu.xml" />
         <option value="$PROJECT_DIR$/src/main/java/kobolapp/com/kobolapp3/HomeMenu.java" />
         <option value="$PROJECT_DIR$/src/main/res/layout/fragment_temp.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/fragment_head.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/fragment_timeslept.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/kobolapp/com/kobolapp3/TimeSleptFragment.java" />
       </list>
     </option>
   </component>
@@ -356,7 +367,7 @@
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.32897604" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.32976446" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.32334048" />
+      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.32334048" />
       <window_info anchor="bottom" id="Android Profiler" order="8" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.32976446" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" weight="0.6311111" />
@@ -461,24 +472,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kobolapp/com/kobolapp3/TimeSleptFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5757">
-          <caret line="160" selection-start-line="160" selection-end-line="160" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/test.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kobolapp/com/kobolapp3/BluetoothLeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="331" column="45" selection-start-line="331" selection-start-column="45" selection-end-line="331" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -511,7 +508,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/kobolapp/com/kobolapp3/LoginFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
-          <caret line="45" column="114" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="114" />
+          <caret line="45" column="114" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="114" />
         </state>
       </provider>
     </entry>
@@ -546,11 +543,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_timeslept.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="48" lean-forward="true" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+        <state relative-caret-position="527">
+          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kobolapp/com/kobolapp3/BluetoothLeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="331" column="45" selection-start-line="331" selection-start-column="45" selection-end-line="331" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kobolapp/com/kobolapp3/TimeSleptFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306">
+          <caret line="303" selection-start-line="303" selection-end-line="303" />
+          <folding>
+            <element signature="e#9549#9563#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

@@ -12,6 +12,8 @@ import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
 import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -213,6 +215,10 @@ public class TimeSleptFragment extends AppCompatActivity {
         mBluetoothLeService = new BluetoothLeService();
         mBluetoothLeService.initialize(this, mBluetoothManager);
 
+        File dir = getFilesDir();
+        File file = new File(dir, "test.csv");
+        boolean deleted = file.delete();
+
         float[] f1 = {4f,6f,3f};
         float[] f2 = {8f,3f,2f};
         float[] f3 = {7f,3f,8f};
@@ -256,7 +262,7 @@ public class TimeSleptFragment extends AppCompatActivity {
         LineData data = new LineData(GetDataValues(mContext));
         chart.setData(data);
 
-        chart.getXAxis().setLabelCount(100, true);
+        chart.getXAxis().setLabelCount(10, true);
         chart.getXAxis().setPosition(XAxis.XAxisPosition.BOTTOM);
         chart.invalidate();
 
@@ -290,40 +296,37 @@ public class TimeSleptFragment extends AppCompatActivity {
      **/
     private ArrayList<ILineDataSet> GetDataValues(Context context) {
 
-        List<String[]> csv = new ArrayList<>();
-        try {
-            CSVReader reader = new CSVReader(new InputStreamReader(getResources().openRawResource(R.raw.test)));
-            csv = reader.readAll();
-        } catch (Exception e) {
-        }
-        String[] data;
-        if (csv.size() > 1) {
-            data = csv.get(0);
-            for (int i = 1; i < csv.size(); i += 1) {
-                data = ArrayUtils.addAll(data, csv.get(i));
-            }
-        } else {
-            data = csv.get(0);
-        }
-
 
         List<List<String>> seperatedData = new ArrayList<List<String>>();
+        try {
+            FileInputStream reader = context.openFileInput("test.csv");
+            InputStreamReader inputStreamReader = new InputStreamReader(reader);
+            BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+            String lineData;
+            while ((lineData = bufferedReader.readLine()) != null){
+                List<String> x = new ArrayList<String>();
+                List<String> y = Arrays.asList(lineData.split("\\s*,\\s*"));
 
 
-        for (int i = 0; i < data.length; i += 9) {
-            List<String> x = new ArrayList<String>();
 
-            float a = Float.parseFloat(data[i + 1]) + Float.parseFloat(data[i + 2]) + Float.parseFloat(data[i + 3]);
-            float b = Float.parseFloat(data[i + 4]) + Float.parseFloat(data[i + 5]) + Float.parseFloat(data[i + 6]);
+                float a = Float.parseFloat(y.get(1))+Float.parseFloat(y.get(2))+Float.parseFloat(y.get(3));
+                float b = Float.parseFloat(y.get(4))+Float.parseFloat(y.get(5))+Float.parseFloat(y.get(6));
 
-            x.add(0, data[i]);
-            x.add(1, Float.toString(a));
-            x.add(2, Float.toString(b));
-            x.add(3, data[i + 7]);
-            x.add(4, data[i + 8]);
-            seperatedData.add(x);
+                x.add(0, y.get(0));
+                x.add(1, Float.toString(a));
+                x.add(2, Float.toString(b));
+                x.add(3, y.get(7));
+                x.add(4, y.get(8));
+                Log.d("tag",x.get(0));
+
+
+
+                seperatedData.add(x);
+
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-
         List<Entry> gvalues = new ArrayList<Entry>();
         List<Entry> avalues = new ArrayList<Entry>();
         List<Entry> tvalues = new ArrayList<Entry>();
