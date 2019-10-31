@@ -10,10 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9175de5a-12b1-4b0e-afd5-c361a96b6e42" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kobolapp/com/kobolapp3/HomeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kobolapp/com/kobolapp3/HomeMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_home.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_head.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_head.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_temp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_temp.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_timeslept.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_timeslept.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/kobolapp/com/kobolapp3/HomeMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="716">
-              <caret line="71" column="32" lean-forward="true" selection-start-line="71" selection-start-column="32" selection-end-line="71" selection-end-column="32" />
+            <state relative-caret-position="665">
+              <caret line="68" column="71" selection-start-line="68" selection-start-column="71" selection-end-line="68" selection-end-column="71" />
               <folding>
                 <element signature="e#1808#2042#0" expanded="true" />
                 <element signature="e#2041#2042#0" expanded="true" />
@@ -56,6 +55,36 @@
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_timeslept.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="48" lean-forward="true" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_head.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="18" selection-end-column="34" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_temp.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="31" selection-start-line="31" selection-end-line="40" selection-end-column="57" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -95,10 +124,7 @@
         <option value="$PROJECT_DIR$/src/main/res/layout/actionbar.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/fragment_login.xml" />
         <option value="$PROJECT_DIR$/src/main/java/kobolapp/com/kobolapp3/HeadFragment.java" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/fragment_head.xml" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/fragment_temp.xml" />
         <option value="$PROJECT_DIR$/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/fragment_timeslept.xml" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/main/java/kobolapp/com/kobolapp3/BluetoothLeService.java" />
@@ -106,6 +132,9 @@
         <option value="$PROJECT_DIR$/src/main/res/layout/fragment_home.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/fragment_menu.xml" />
         <option value="$PROJECT_DIR$/src/main/java/kobolapp/com/kobolapp3/HomeMenu.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/fragment_temp.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/fragment_head.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/fragment_timeslept.xml" />
       </list>
     </option>
   </component>
@@ -199,16 +228,16 @@
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\KOBOL\KobolApp3\app\src\main\res\raw" />
-    </key>
-    <key name="android.template.packageName">
-      <recent name="kobolapp.com.kobolapp3" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\KOBOL\KobolApp3\app\src\main\res\raw" />
       <recent name="D:\KOBOL\KobolApp3\app\src\main\java\kobolapp\com\kobolapp3" />
       <recent name="D:\KOBOL\KobolApp3\app\src\main\res\values" />
+    </key>
+    <key name="android.template.packageName">
+      <recent name="kobolapp.com.kobolapp3" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\KOBOL\KobolApp3\app\src\main\res\raw" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -330,7 +359,7 @@
       <window_info anchor="bottom" id="Build" order="7" weight="0.32334048" />
       <window_info anchor="bottom" id="Android Profiler" order="8" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.32976446" />
-      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" visible="true" weight="0.32995737" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" weight="0.6311111" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -389,25 +418,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_login.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/kobolapp/com/kobolapp3/HeadFragment.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_head.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_timeslept.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_temp.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
       <provider editor-type-id="android-manifest" />
@@ -452,7 +468,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/raw/test.csv">
+    <entry file="file://$USER_HOME$/Downloads/test.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
@@ -501,8 +517,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kobolapp/com/kobolapp3/HomeMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="716">
-          <caret line="71" column="32" lean-forward="true" selection-start-line="71" selection-start-column="32" selection-end-line="71" selection-end-column="32" />
+        <state relative-caret-position="665">
+          <caret line="68" column="71" selection-start-line="68" selection-start-column="71" selection-end-line="68" selection-end-column="71" />
           <folding>
             <element signature="e#1808#2042#0" expanded="true" />
             <element signature="e#2041#2042#0" expanded="true" />
@@ -511,6 +527,30 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_temp.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" selection-start-line="31" selection-end-line="40" selection-end-column="57" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_head.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="18" selection-end-column="34" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_timeslept.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="48" lean-forward="true" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
   </component>
 </project>
