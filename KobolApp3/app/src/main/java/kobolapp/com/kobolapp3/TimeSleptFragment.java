@@ -177,6 +177,8 @@ public class TimeSleptFragment extends AppCompatActivity {
     Random randint = new Random();
     List<String> testdata = new ArrayList<>();
     String[] data2 = new String[900];
+    LineChart chart;
+
 
 
     @Override
@@ -196,7 +198,7 @@ public class TimeSleptFragment extends AppCompatActivity {
 
 
         /**set up chart**/
-        LineChart chart = (LineChart) findViewById(R.id.chart);
+        chart = (LineChart) findViewById(R.id.chart);
 
 
 
@@ -581,6 +583,23 @@ public class TimeSleptFragment extends AppCompatActivity {
     private int i = 1;
 
     private void update(byte[] acc) {
+
+        Log.d(TAG, "update: update");
+        float[] f1 = {randint.nextFloat(),randint.nextFloat(),randint.nextFloat()};
+        float[] f2 = {randint.nextFloat(),randint.nextFloat(),randint.nextFloat()};
+
+        try {
+            addToCSV(f1,f2,randint.nextFloat(),randint.nextFloat(),mContext,i);
+
+        } catch (IOException e) {
+        }
+        i+=1;
+
+        LineData data = new LineData(GetDataValues(mContext));
+        chart.setData(data);
+
+        chart.notifyDataSetChanged();
+        chart.invalidate();
 
     }
 }
