@@ -417,8 +417,8 @@ public class TimeSleptFragment extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        //unbindService(mServiceConnection);
-        //mBluetoothLeService = null;
+        unbindService(mServiceConnection);
+        mBluetoothLeService = null;
     }
 
     private void checkBTPermissions() {
